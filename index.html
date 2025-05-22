@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion des Produits</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Produits</h1>
+
+  <input type="text" id="search" placeholder="Rechercher un produit..." />
+  <select id="sort">
+    <option value="">-- Trier par --</option>
+    <option value="price">Prix</option>
+    <option value="stock">Stock</option>
+  </select>
+
+  <ul id="productList"></ul>
+
+  <p><strong>Prix Total :</strong> <span id="totalPrice"></span> MAD</p>
+
+  <canvas id="productChart" width="400" height="200"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
